@@ -11,3 +11,4 @@ session		include		system-auth
 session		optional	pam_motd.so motd=/etc/motd
 session		optional	pam_lastlog.so never showfailed
 session		optional	pam_mail.so
+session		optional	pam_umask.so

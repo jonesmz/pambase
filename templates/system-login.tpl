@@ -26,6 +26,7 @@ session		required	pam_selinux.so multiple open
 session		optional	pam_motd.so motd=/etc/motd
 session		optional	pam_lastlog.so never showfailed {{ debug }}
 session		optional	pam_mail.so
+session		optional	pam_umask.so
 {% endif %}
 
 {% if systemd %}
