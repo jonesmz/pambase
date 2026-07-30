@@ -38,6 +38,9 @@ session		optional	pam_umask.so
 {% endif %}
 
 {% if openrc %}
+{% if not elogind %}
+-session	optional	pam_xdg.so notroot
+{% endif %}
 -session	optional	pam_openrc.so
 {% endif %}
 
